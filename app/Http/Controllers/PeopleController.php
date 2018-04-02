@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\People;
 use Illuminate\Http\Request;
 
 class PeopleController extends Controller
@@ -13,7 +14,8 @@ class PeopleController extends Controller
      */
     public function index()
     {
-        //
+        $peoples = People::get();
+        return view('crud', ['peoples'=> $peoples]);
     }
 
     /**
