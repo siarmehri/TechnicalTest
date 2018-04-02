@@ -8,5 +8,8 @@ For this certain test which have the maximum of 10 records with a condition to n
 the relationship will complicate the task and we will need to add more logic to enforce our condition.
 Even though it could be done by adding counter to job_role table to show how many persons do we have in this certain role, but updating the counter would be a bit annoying. 
 With this solution we can easily count our condition with a simple query.
+# Seed peoples table
+php artisan db:seed
+
 
 
