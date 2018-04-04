@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\People;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class PeopleController extends Controller
 {
@@ -36,7 +37,7 @@ class PeopleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -81,6 +82,10 @@ class PeopleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $person = People::find($id);
+        $personFirstName = $person->firstname;
+        $personLastName = $person->lastname;
+        $person->delete();
+        return response()->json(['message'=>'Record for '.$personFirstName.' '.$personLastName.' have been successfully delete!']);
     }
 }
