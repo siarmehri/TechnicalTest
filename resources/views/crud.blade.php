@@ -40,7 +40,7 @@
                deletePerson(checkedItem);
            });
 
-            $('#addNew').click(function() {
+            $('.addNew').click(function() {
                 createNewPerson();
             });
 
@@ -50,7 +50,7 @@
 
         function createNewPerson() {
             var inputKeyValueString='{';
-            $("input#new").each(function () {
+            $(".new").each(function () {
                 var element = $(this);
                 inputKeyValueString += '"'+element.prop('name')+'":"'+element.val()+'",';
             });
