@@ -11,5 +11,14 @@ With this solution we can easily count our condition with a simple query.
 # Seed peoples table
 php artisan db:seed
 
-
-
+# How to run the project:
+1. clone it from github.
+2. create a database called TechnicalTest [it is in .env.example file].
+3. configure your database connection [.env file]
+4. run following commands in project folder:
+    - composer install
+    - php artisan migrate
+    - php artisan db:seed [seeding with markup form provided for this test, you should run it only once]
+    - php artisan config:cache
+    - php artisan route:cache [just in case it is not working fine]
+5. visit [url/people] and play with it...
