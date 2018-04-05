@@ -22,3 +22,6 @@ php artisan db:seed
     - php artisan config:cache
     - php artisan route:cache [just in case it is not working fine]
 5. visit [url/people] and play with it...
+
+# Created bundle called file.bundle 
+It is pushed to the root folder of the project...
