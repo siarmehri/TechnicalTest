@@ -25,3 +25,6 @@ php artisan db:seed
 
 # Created bundle called file.bundle 
 It is pushed to the root folder of the project...
+
+# Time spent on this test
+4 Hours of Quality work :-)
